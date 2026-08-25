@@ -3017,3 +3017,80 @@ main,
     opacity: 1 !important;
     transform: none !important;
 }
+/* =========================================================
+   FINAL VISIBILITY / LAYER FIX
+   Keeps cursor + lighting + particles working
+========================================================= */
+
+/* Keep actual website content above background effects */
+main,
+.hero,
+.marquee,
+.section,
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header stays above everything except cursor */
+.header {
+    z-index: 9000;
+}
+
+/* Make sure hero content is visible */
+.hero-content,
+.hero-visual {
+    position: relative;
+    z-index: 3;
+}
+
+/* Make sure all sections are visible */
+.about,
+.skills,
+.projects,
+.contact {
+    position: relative;
+    z-index: 2;
+}
+
+/* Reveal animation must end in visible state */
+.reveal {
+    opacity: 1;
+}
+
+/* JS can still animate transform */
+.reveal.visible {
+    opacity: 1;
+}
+
+/* Keep background effects behind the website */
+.background-glow {
+    z-index: 0;
+}
+
+.floating-particles {
+    z-index: 0;
+}
+
+/* Noise remains over page but transparent */
+.noise {
+    z-index: 9995;
+}
+
+/* Cursor remains at the very top */
+#cursor-trail {
+    z-index: 9998;
+}
+
+.cursor-ring {
+    z-index: 10001;
+}
+
+.cursor-dot {
+    z-index: 10002;
+}
+
+/* Spotlight stays behind content */
+.mouse-light {
+    z-index: 1;
+}
