@@ -819,3 +819,227 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+// ==================================================
+// CUSTOM CURSOR
+// ==================================================
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorRing = document.querySelector(".cursor-ring");
+const cursorCanvas = document.getElementById("cursor-trail");
+
+const cursorCtx = cursorCanvas.getContext("2d");
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+let ringX = mouseX;
+let ringY = mouseY;
+
+const trail = [];
+
+const TRAIL_LENGTH = 35;
+
+
+// ==================================================
+// CANVAS SIZE
+// ==================================================
+
+function resizeCursorCanvas() {
+
+    cursorCanvas.width = window.innerWidth;
+    cursorCanvas.height = window.innerHeight;
+
+}
+
+resizeCursorCanvas();
+
+window.addEventListener("resize", resizeCursorCanvas);
+
+
+// ==================================================
+// MOUSE MOVEMENT
+// ==================================================
+
+document.addEventListener("mousemove", (e) => {
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // Small cursor
+    cursorDot.style.left = `${mouseX}px`;
+    cursorDot.style.top = `${mouseY}px`;
+
+    // Save mouse position for trail
+    trail.push({
+        x: mouseX,
+        y: mouseY
+    });
+
+    if (trail.length > TRAIL_LENGTH) {
+        trail.shift();
+    }
+
+});
+
+
+// ==================================================
+// SMOOTH RING
+// ==================================================
+
+function animateCursor() {
+
+    ringX += (mouseX - ringX) * 0.15;
+    ringY += (mouseY - ringY) * 0.15;
+
+    cursorRing.style.left = `${ringX}px`;
+    cursorRing.style.top = `${ringY}px`;
+
+    drawTrail();
+
+    requestAnimationFrame(animateCursor);
+
+}
+
+animateCursor();
+
+
+// ==================================================
+// DRAW CURSOR TRAIL
+// ==================================================
+
+function drawTrail() {
+
+    cursorCtx.clearRect(
+        0,
+        0,
+        cursorCanvas.width,
+        cursorCanvas.height
+    );
+
+    if (trail.length < 2) return;
+
+    cursorCtx.beginPath();
+
+    cursorCtx.moveTo(
+        trail[0].x,
+        trail[0].y
+    );
+
+    for (let i = 1; i < trail.length; i++) {
+
+        const current = trail[i];
+
+        cursorCtx.lineTo(
+            current.x,
+            current.y
+        );
+
+    }
+
+    const gradient = cursorCtx.createLinearGradient(
+        trail[0].x,
+        trail[0].y,
+        trail[trail.length - 1].x,
+        trail[trail.length - 1].y
+    );
+
+    gradient.addColorStop(
+        0,
+        "rgba(56,189,248,0)"
+    );
+
+    gradient.addColorStop(
+        0.5,
+        "rgba(56,189,248,.25)"
+    );
+
+    gradient.addColorStop(
+        1,
+        "rgba(139,92,246,.8)"
+    );
+
+    cursorCtx.strokeStyle = gradient;
+
+    cursorCtx.lineWidth = 2;
+
+    cursorCtx.lineCap = "round";
+
+    cursorCtx.lineJoin = "round";
+
+    cursorCtx.stroke();
+
+}
+
+
+// ==================================================
+// CURSOR HOVER EFFECT
+// ==================================================
+
+const hoverElements = document.querySelectorAll(
+    "a, button, input, textarea, .skill-card, .project-card, .about-card"
+);
+
+hoverElements.forEach((element) => {
+
+    element.addEventListener("mouseenter", () => {
+
+        cursorRing.classList.add("hover");
+
+    });
+
+    element.addEventListener("mouseleave", () => {
+
+        cursorRing.classList.remove("hover");
+
+    });
+
+});
+
+
+// ==================================================
+// CLICK EFFECT
+// ==================================================
+
+document.addEventListener("mousedown", () => {
+
+    cursorRing.style.transform =
+        "translate(-50%, -50%) scale(.7)";
+
+});
+
+document.addEventListener("mouseup", () => {
+
+    cursorRing.style.transform =
+        "translate(-50%, -50%) scale(1)";
+
+});
+
+
+// ==================================================
+// FLOATING PARTICLES
+// ==================================================
+
+const particleContainer =
+    document.querySelector(".floating-particles");
+
+for (let i = 0; i < 35; i++) {
+
+    const particle = document.createElement("span");
+
+    particle.classList.add("particle");
+
+    particle.style.left =
+        `${Math.random() * 100}%`;
+
+    particle.style.animationDuration =
+        `${8 + Math.random() * 15}s`;
+
+    particle.style.animationDelay =
+        `${Math.random() * 10}s`;
+
+    particle.style.opacity =
+        `${0.15 + Math.random() * 0.3}`;
+
+    particleContainer.appendChild(particle);
+
+}
