@@ -2,16 +2,23 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
         content="Sarah Khan — Front-End Developer & Software Engineering Student">
 
-    <meta name="author" content="Sarah Khan">
-    <meta name="theme-color" content="#0b0b0b">
+    <meta name="author"
+        content="Sarah Khan">
+
+    <meta name="theme-color"
+        content="#0b0b0b">
 
     <title>Sarah Khan — Front-End Developer</title>
+
 
     <!-- =====================================================
          FONTS
@@ -21,6 +28,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+
     <!-- =====================================================
          FONT AWESOME
     ====================================================== -->
@@ -29,32 +37,73 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+
     <!-- =====================================================
          CSS
     ====================================================== -->
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css">
+
 </head>
 
 
 <body>
 
-    <!-- =====================================================
-         CUSTOM CURSOR
-    ====================================================== -->
-
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
-    <canvas id="cursor-trail"></canvas>
-
 
     <!-- =====================================================
-         GLOBAL BACKGROUND
+         INTERACTIVE CURSOR
     ====================================================== -->
 
-    <div class="background-glow"></div>
-    <div class="floating-particles"></div>
-    <div class="noise"></div>
+    <div
+        class="cursor-dot"
+        aria-hidden="true">
+    </div>
+
+
+    <div
+        class="cursor-ring"
+        aria-hidden="true">
+    </div>
+
+
+    <canvas
+        id="cursor-trail"
+        aria-hidden="true">
+    </canvas>
+
+
+    <!-- =====================================================
+         MOUSE FOLLOWING LIGHT / SPOTLIGHT
+    ====================================================== -->
+
+    <div
+        class="mouse-light"
+        aria-hidden="true">
+    </div>
+
+
+    <!-- =====================================================
+         GLOBAL BACKGROUND EFFECTS
+    ====================================================== -->
+
+    <div
+        class="background-glow"
+        aria-hidden="true">
+    </div>
+
+
+    <div
+        class="floating-particles"
+        aria-hidden="true">
+    </div>
+
+
+    <div
+        class="noise"
+        aria-hidden="true">
+    </div>
 
 
     <!-- =====================================================
@@ -65,20 +114,43 @@
 
         <div class="container navbar">
 
-            <a href="#home" class="logo magnetic">
+
+            <!-- LOGO -->
+
+            <a
+                href="#home"
+                class="logo magnetic">
+
                 Sarah<span>.</span>
+
             </a>
 
 
             <!-- DESKTOP NAVIGATION -->
 
-            <nav class="desktop-nav">
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation">
 
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
 
             </nav>
 
@@ -87,16 +159,22 @@
 
             <div class="nav-actions">
 
+
+                <!-- THEME -->
+
                 <button
                     id="theme-toggle"
                     class="theme-toggle magnetic"
                     type="button"
-                    aria-label="Toggle light and dark theme">
+                    aria-label="Toggle light and dark theme"
+                    aria-pressed="false">
 
                     <i class="fa-solid fa-moon"></i>
 
                 </button>
 
+
+                <!-- MOBILE MENU -->
 
                 <button
                     class="menu-btn magnetic"
@@ -113,15 +191,31 @@
         </div>
 
 
-        <!-- MOBILE NAVIGATION -->
+        <!-- MOBILE NAV -->
 
-        <nav class="mobile-nav">
+        <nav
+            class="mobile-nav"
+            aria-label="Mobile navigation">
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
 
         </nav>
 
@@ -139,18 +233,25 @@
              HERO
         ================================================== -->
 
-        <section class="hero" id="home">
+        <section
+            class="hero"
+            id="home">
+
 
             <div class="container hero-container">
 
 
                 <!-- HERO CONTENT -->
 
-                <div class="hero-content reveal">
+                <div
+                    class="hero-content reveal">
+
 
                     <div class="availability">
 
-                        <span class="availability-dot"></span>
+                        <span
+                            class="availability-dot">
+                        </span>
 
                         Available for opportunities
 
@@ -163,7 +264,9 @@
 
 
                     <h1 class="hero-title">
+
                         Sarah<span>.</span>
+
                     </h1>
 
 
@@ -193,13 +296,16 @@
 
                     <div class="hero-actions">
 
+
                         <a
                             href="#projects"
                             class="btn primary-btn magnetic">
 
                             View My Work
 
-                            <i class="fa-solid fa-arrow-down"></i>
+                            <i
+                                class="fa-solid fa-arrow-down">
+                            </i>
 
                         </a>
 
@@ -210,7 +316,9 @@
 
                             Let's Connect
 
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square">
+                            </i>
 
                         </a>
 
@@ -221,6 +329,7 @@
 
                     <div class="social-icons">
 
+
                         <a
                             href="https://github.com/khansarah246"
                             target="_blank"
@@ -228,7 +337,9 @@
                             aria-label="GitHub"
                             class="magnetic">
 
-                            <i class="fab fa-github"></i>
+                            <i
+                                class="fab fa-github">
+                            </i>
 
                         </a>
 
@@ -240,7 +351,9 @@
                             aria-label="LinkedIn"
                             class="magnetic">
 
-                            <i class="fab fa-linkedin-in"></i>
+                            <i
+                                class="fab fa-linkedin-in">
+                            </i>
 
                         </a>
 
@@ -250,7 +363,9 @@
                             aria-label="Email"
                             class="magnetic">
 
-                            <i class="fa-solid fa-envelope"></i>
+                            <i
+                                class="fa-solid fa-envelope">
+                            </i>
 
                         </a>
 
@@ -259,47 +374,76 @@
                 </div>
 
 
-                <!-- HERO VISUAL -->
+                <!-- =================================================
+                     HERO VISUAL
+                ================================================== -->
 
-                <div class="hero-visual reveal">
+                <div
+                    class="hero-visual reveal">
 
-                    <div class="hero-image-wrap">
+
+                    <div
+                        class="hero-image-wrap"
+                        data-tilt="true">
 
 
                         <!-- ROTATING ORBITS -->
 
-                        <div class="orbit orbit-1"></div>
-                        <div class="orbit orbit-2"></div>
+                        <div
+                            class="orbit orbit-1">
+                        </div>
+
+
+                        <div
+                            class="orbit orbit-2">
+                        </div>
 
 
                         <!-- PROFILE IMAGE -->
 
-                        <div class="hero-image">
+                        <div
+                            class="hero-image">
 
                             <img
                                 src="Profile.jfif"
-                                alt="Sarah Khan — Front-End Developer">
+                                alt="Sarah Khan — Front-End Developer"
+                                draggable="false">
 
                         </div>
 
 
-                        <!-- FLOATING ELEMENTS -->
+                        <!-- FLOATING ELEMENT ONE -->
 
-                        <div class="floating-card floating-card-one">
-                            <span>&lt;/&gt;</span>
+                        <div
+                            class="floating-card floating-card-one">
+
+                            <span>
+                                &lt;/&gt;
+                            </span>
+
                         </div>
 
 
-                        <div class="floating-card floating-card-two">
-                            <span>{ }</span>
+                        <!-- FLOATING ELEMENT TWO -->
+
+                        <div
+                            class="floating-card floating-card-two">
+
+                            <span>
+                                { }
+                            </span>
+
                         </div>
 
 
                         <!-- IMAGE LABEL -->
 
-                        <div class="image-label">
+                        <div
+                            class="image-label">
 
-                            <span class="label-dot"></span>
+                            <span
+                                class="label-dot">
+                            </span>
 
                             SOFTWARE ENGINEERING
 
@@ -322,7 +466,9 @@
                     Scroll to explore
                 </span>
 
-                <i class="fa-solid fa-arrow-down"></i>
+                <i
+                    class="fa-solid fa-arrow-down">
+                </i>
 
             </a>
 
@@ -333,41 +479,82 @@
              MARQUEE
         ================================================== -->
 
-        <section class="marquee" aria-label="Skills and specialties">
+        <section
+            class="marquee"
+            aria-label="Skills and specialties">
 
             <div class="marquee-track">
 
-                <span>FRONT-END DEVELOPMENT</span>
-                <b>✦</b>
 
-                <span>SOFTWARE ENGINEERING</span>
-                <b>✦</b>
+                <span>
+                    FRONT-END DEVELOPMENT
+                </span>
 
-                <span>CREATIVE DEVELOPMENT</span>
-                <b>✦</b>
-
-                <span>RESPONSIVE DESIGN</span>
-                <b>✦</b>
-
-                <span>PROBLEM SOLVING</span>
                 <b>✦</b>
 
 
-                <!-- DUPLICATE FOR SEAMLESS LOOP -->
+                <span>
+                    SOFTWARE ENGINEERING
+                </span>
 
-                <span>FRONT-END DEVELOPMENT</span>
                 <b>✦</b>
 
-                <span>SOFTWARE ENGINEERING</span>
+
+                <span>
+                    CREATIVE DEVELOPMENT
+                </span>
+
                 <b>✦</b>
 
-                <span>CREATIVE DEVELOPMENT</span>
+
+                <span>
+                    RESPONSIVE DESIGN
+                </span>
+
                 <b>✦</b>
 
-                <span>RESPONSIVE DESIGN</span>
+
+                <span>
+                    PROBLEM SOLVING
+                </span>
+
                 <b>✦</b>
 
-                <span>PROBLEM SOLVING</span>
+
+                <!-- DUPLICATE FOR LOOP -->
+
+                <span>
+                    FRONT-END DEVELOPMENT
+                </span>
+
+                <b>✦</b>
+
+
+                <span>
+                    SOFTWARE ENGINEERING
+                </span>
+
+                <b>✦</b>
+
+
+                <span>
+                    CREATIVE DEVELOPMENT
+                </span>
+
+                <b>✦</b>
+
+
+                <span>
+                    RESPONSIVE DESIGN
+                </span>
+
+                <b>✦</b>
+
+
+                <span>
+                    PROBLEM SOLVING
+                </span>
+
                 <b>✦</b>
 
             </div>
@@ -388,16 +575,24 @@
 
                 <!-- SECTION HEADER -->
 
-                <div class="section-header reveal">
+                <div
+                    class="section-header reveal">
+
 
                     <div>
 
-                        <span class="section-number">
+                        <span
+                            class="section-number">
+
                             01 / ABOUT
+
                         </span>
 
+
                         <h2>
+
                             Who I Am<span>.</span>
+
                         </h2>
 
                     </div>
@@ -421,7 +616,9 @@
 
                     <!-- ABOUT TEXT -->
 
-                    <div class="about-copy reveal">
+                    <div
+                        class="about-copy reveal">
+
 
                         <span class="eyebrow">
                             ABOUT SARAH
@@ -470,7 +667,9 @@
 
                             Explore my projects
 
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i
+                                class="fa-solid fa-arrow-right">
+                            </i>
 
                         </a>
 
@@ -479,16 +678,26 @@
 
                     <!-- ABOUT STATS -->
 
-                    <div class="about-stats reveal">
+                    <div
+                        class="about-stats reveal">
 
 
-                        <div class="stat-card magnetic">
+                        <div
+                            class="stat-card magnetic">
 
                             <span class="stat-icon">
-                                <i class="fa-solid fa-code"></i>
+
+                                <i
+                                    class="fa-solid fa-code">
+                                </i>
+
                             </span>
 
-                            <strong>5+</strong>
+
+                            <strong>
+                                5+
+                            </strong>
+
 
                             <span>
                                 Projects Built
@@ -497,13 +706,22 @@
                         </div>
 
 
-                        <div class="stat-card magnetic">
+                        <div
+                            class="stat-card magnetic">
 
                             <span class="stat-icon">
-                                <i class="fa-solid fa-laptop-code"></i>
+
+                                <i
+                                    class="fa-solid fa-laptop-code">
+                                </i>
+
                             </span>
 
-                            <strong>Web</strong>
+
+                            <strong>
+                                Web
+                            </strong>
+
 
                             <span>
                                 Development
@@ -512,13 +730,22 @@
                         </div>
 
 
-                        <div class="stat-card magnetic">
+                        <div
+                            class="stat-card magnetic">
 
                             <span class="stat-icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
+
+                                <i
+                                    class="fa-solid fa-graduation-cap">
+                                </i>
+
                             </span>
 
-                            <strong>BSSE</strong>
+
+                            <strong>
+                                BSSE
+                            </strong>
+
 
                             <span>
                                 Student
@@ -527,13 +754,22 @@
                         </div>
 
 
-                        <div class="stat-card magnetic">
+                        <div
+                            class="stat-card magnetic">
 
                             <span class="stat-icon">
-                                <i class="fa-solid fa-lightbulb"></i>
+
+                                <i
+                                    class="fa-solid fa-lightbulb">
+                                </i>
+
                             </span>
 
-                            <strong>Creative</strong>
+
+                            <strong>
+                                Creative
+                            </strong>
+
 
                             <span>
                                 Problem Solver
@@ -563,16 +799,24 @@
 
                 <!-- SECTION HEADER -->
 
-                <div class="section-header reveal">
+                <div
+                    class="section-header reveal">
+
 
                     <div>
 
-                        <span class="section-number">
+                        <span
+                            class="section-number">
+
                             02 / SKILLS
+
                         </span>
 
+
                         <h2>
+
                             My Toolkit<span>.</span>
+
                         </h2>
 
                     </div>
@@ -594,151 +838,311 @@
                 <div class="skills-list">
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">01</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-html5"></i>
+                            01
 
-                        <h3>HTML5</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-html5">
+                        </i>
+
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             FRONTEND
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">02</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-css3-alt"></i>
+                            02
 
-                        <h3>CSS3</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-css3-alt">
+                        </i>
+
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             FRONTEND
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">03</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-js"></i>
+                            03
 
-                        <h3>JavaScript</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-js">
+                        </i>
+
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             LANGUAGE
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">04</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-react"></i>
+                            04
 
-                        <h3>React</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-react">
+                        </i>
+
+
+                        <h3>
+                            React
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             FRONTEND
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">05</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-bootstrap"></i>
+                            05
 
-                        <h3>Bootstrap</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-bootstrap">
+                        </i>
+
+
+                        <h3>
+                            Bootstrap
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             FRAMEWORK
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">06</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-python"></i>
+                            06
 
-                        <h3>Python</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-python">
+                        </i>
+
+
+                        <h3>
+                            Python
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             LANGUAGE
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">07</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-java"></i>
+                            07
 
-                        <h3>Java</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-java">
+                        </i>
+
+
+                        <h3>
+                            Java
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             LANGUAGE
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">08</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-solid fa-database"></i>
+                            08
 
-                        <h3>MySQL</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-solid fa-database">
+                        </i>
+
+
+                        <h3>
+                            MySQL
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             DATABASE
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">09</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-git-alt"></i>
+                            09
 
-                        <h3>Git</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-git-alt">
+                        </i>
+
+
+                        <h3>
+                            Git
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             TOOL
+
                         </span>
 
                     </div>
 
 
-                    <div class="skill-row reveal">
+                    <div
+                        class="skill-row reveal">
 
-                        <span class="skill-index">10</span>
+                        <span
+                            class="skill-index">
 
-                        <i class="fa-brands fa-github"></i>
+                            10
 
-                        <h3>GitHub</h3>
+                        </span>
 
-                        <span class="skill-type">
+
+                        <i
+                            class="fa-brands fa-github">
+                        </i>
+
+
+                        <h3>
+                            GitHub
+                        </h3>
+
+
+                        <span
+                            class="skill-type">
+
                             PLATFORM
+
                         </span>
 
                     </div>
@@ -763,16 +1167,24 @@
 
                 <!-- SECTION HEADER -->
 
-                <div class="section-header reveal">
+                <div
+                    class="section-header reveal">
+
 
                     <div>
 
-                        <span class="section-number">
+                        <span
+                            class="section-number">
+
                             03 / PROJECTS
+
                         </span>
 
+
                         <h2>
+
                             Selected Work<span>.</span>
+
                         </h2>
 
                     </div>
@@ -794,30 +1206,41 @@
                 <div class="projects-list">
 
 
-                    <!-- =================================================
-                         PROJECT 01 — FILMYFY
-                    ================================================== -->
+                    <!-- PROJECT 01 -->
 
-                    <article class="project-card reveal">
+                    <article
+                        class="project-card reveal"
+                        data-tilt="true">
 
-                        <div class="project-number">
+
+                        <div
+                            class="project-number">
+
                             01
+
                         </div>
 
 
-                        <div class="project-image">
+                        <div
+                            class="project-image">
 
                             <img
                                 src="Filmyfy.PNG"
-                                alt="Filmyfy movie website">
+                                alt="Filmyfy movie website"
+                                draggable="false">
 
                         </div>
 
 
-                        <div class="project-info">
+                        <div
+                            class="project-info">
 
-                            <span class="project-category">
+
+                            <span
+                                class="project-category">
+
                                 WEB DEVELOPMENT
+
                             </span>
 
 
@@ -853,7 +1276,9 @@
 
                                 View on GitHub
 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
 
                             </a>
 
@@ -862,30 +1287,41 @@
                     </article>
 
 
-                    <!-- =================================================
-                         PROJECT 02 — SPELLTRIXX
-                    ================================================== -->
+                    <!-- PROJECT 02 -->
 
-                    <article class="project-card reveal">
+                    <article
+                        class="project-card reveal"
+                        data-tilt="true">
 
-                        <div class="project-number">
+
+                        <div
+                            class="project-number">
+
                             02
+
                         </div>
 
 
-                        <div class="project-image">
+                        <div
+                            class="project-image">
 
                             <img
                                 src="SpellTrixx.PNG"
-                                alt="Spelltrixx Python game">
+                                alt="Spelltrixx Python game"
+                                draggable="false">
 
                         </div>
 
 
-                        <div class="project-info">
+                        <div
+                            class="project-info">
 
-                            <span class="project-category">
+
+                            <span
+                                class="project-category">
+
                                 PYTHON / GAME
+
                             </span>
 
 
@@ -919,7 +1355,9 @@
 
                                 View on GitHub
 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
 
                             </a>
 
@@ -928,30 +1366,41 @@
                     </article>
 
 
-                    <!-- =================================================
-                         PROJECT 03 — SKYCAST
-                    ================================================== -->
+                    <!-- PROJECT 03 -->
 
-                    <article class="project-card reveal">
+                    <article
+                        class="project-card reveal"
+                        data-tilt="true">
 
-                        <div class="project-number">
+
+                        <div
+                            class="project-number">
+
                             03
+
                         </div>
 
 
-                        <div class="project-image">
+                        <div
+                            class="project-image">
 
                             <img
                                 src="skycast1.PNG"
-                                alt="SkyCast weather dashboard">
+                                alt="SkyCast weather dashboard"
+                                draggable="false">
 
                         </div>
 
 
-                        <div class="project-info">
+                        <div
+                            class="project-info">
 
-                            <span class="project-category">
+
+                            <span
+                                class="project-category">
+
                                 API / JAVASCRIPT
+
                             </span>
 
 
@@ -980,7 +1429,9 @@
                             </div>
 
 
-                            <div class="project-links">
+                            <div
+                                class="project-links">
+
 
                                 <a
                                     href="https://khansarah246.github.io/SkyCast/"
@@ -990,7 +1441,9 @@
 
                                     Live Demo
 
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square">
+                                    </i>
 
                                 </a>
 
@@ -1003,7 +1456,9 @@
 
                                     GitHub
 
-                                    <i class="fa-brands fa-github"></i>
+                                    <i
+                                        class="fa-brands fa-github">
+                                    </i>
 
                                 </a>
 
@@ -1014,30 +1469,41 @@
                     </article>
 
 
-                    <!-- =================================================
-                         PROJECT 04 — CODE MASTER
-                    ================================================== -->
+                    <!-- PROJECT 04 -->
 
-                    <article class="project-card reveal">
+                    <article
+                        class="project-card reveal"
+                        data-tilt="true">
 
-                        <div class="project-number">
+
+                        <div
+                            class="project-number">
+
                             04
+
                         </div>
 
 
-                        <div class="project-image">
+                        <div
+                            class="project-image">
 
                             <img
                                 src="CodeMaster.PNG"
-                                alt="Code Master website">
+                                alt="Code Master website"
+                                draggable="false">
 
                         </div>
 
 
-                        <div class="project-info">
+                        <div
+                            class="project-info">
 
-                            <span class="project-category">
+
+                            <span
+                                class="project-category">
+
                                 WEB DEVELOPMENT
+
                             </span>
 
 
@@ -1073,7 +1539,9 @@
 
                                 View on GitHub
 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
 
                             </a>
 
@@ -1082,30 +1550,41 @@
                     </article>
 
 
-                    <!-- =================================================
-                         PROJECT 05 — BUILDMART
-                    ================================================== -->
+                    <!-- PROJECT 05 -->
 
-                    <article class="project-card reveal">
+                    <article
+                        class="project-card reveal"
+                        data-tilt="true">
 
-                        <div class="project-number">
+
+                        <div
+                            class="project-number">
+
                             05
+
                         </div>
 
 
-                        <div class="project-image">
+                        <div
+                            class="project-image">
 
                             <img
                                 src="buildmart.PNG"
-                                alt="BuildMart marketplace">
+                                alt="BuildMart marketplace"
+                                draggable="false">
 
                         </div>
 
 
-                        <div class="project-info">
+                        <div
+                            class="project-info">
 
-                            <span class="project-category">
+
+                            <span
+                                class="project-category">
+
                                 FULL STACK
+
                             </span>
 
 
@@ -1144,7 +1623,9 @@
 
                                 Live Demo
 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
 
                             </a>
 
@@ -1172,16 +1653,24 @@
 
                 <!-- SECTION HEADER -->
 
-                <div class="section-header reveal">
+                <div
+                    class="section-header reveal">
+
 
                     <div>
 
-                        <span class="section-number">
+                        <span
+                            class="section-number">
+
                             04 / CONTACT
+
                         </span>
 
+
                         <h2>
+
                             Let's Connect<span>.</span>
+
                         </h2>
 
                     </div>
@@ -1198,14 +1687,17 @@
                 </div>
 
 
-                <!-- CONTACT GRID -->
+                <!-- CONTACT -->
 
-                <div class="contact-grid">
+                <div
+                    class="contact-grid">
 
 
                     <!-- CONTACT INFORMATION -->
 
-                    <div class="contact-info reveal">
+                    <div
+                        class="contact-info reveal">
+
 
                         <span class="eyebrow">
                             GET IN TOUCH
@@ -1229,7 +1721,8 @@
                         </p>
 
 
-                        <div class="contact-details">
+                        <div
+                            class="contact-details">
 
 
                             <!-- EMAIL -->
@@ -1238,11 +1731,16 @@
                                 href="mailto:khansarahhh123@gmail.com"
                                 class="contact-item magnetic">
 
-                                <i class="fa-solid fa-envelope"></i>
+                                <i
+                                    class="fa-solid fa-envelope">
+                                </i>
+
 
                                 <div>
 
-                                    <span>Email</span>
+                                    <span>
+                                        Email
+                                    </span>
 
                                     <strong>
                                         khansarahhh123@gmail.com
@@ -1261,11 +1759,16 @@
                                 rel="noopener noreferrer"
                                 class="contact-item magnetic">
 
-                                <i class="fab fa-github"></i>
+                                <i
+                                    class="fab fa-github">
+                                </i>
+
 
                                 <div>
 
-                                    <span>GitHub</span>
+                                    <span>
+                                        GitHub
+                                    </span>
 
                                     <strong>
                                         github.com/khansarah246
@@ -1284,11 +1787,16 @@
                                 rel="noopener noreferrer"
                                 class="contact-item magnetic">
 
-                                <i class="fab fa-linkedin-in"></i>
+                                <i
+                                    class="fab fa-linkedin-in">
+                                </i>
+
 
                                 <div>
 
-                                    <span>LinkedIn</span>
+                                    <span>
+                                        LinkedIn
+                                    </span>
 
                                     <strong>
                                         linkedin.com/in/sarah-khan-2169473a1
@@ -1316,6 +1824,7 @@
                                 Your Name
                             </label>
 
+
                             <input
                                 type="text"
                                 id="name"
@@ -1332,6 +1841,7 @@
                             <label for="email">
                                 Your Email
                             </label>
+
 
                             <input
                                 type="email"
@@ -1350,6 +1860,7 @@
                                 Subject
                             </label>
 
+
                             <input
                                 type="text"
                                 id="subject"
@@ -1366,12 +1877,14 @@
                                 Message
                             </label>
 
+
                             <textarea
                                 id="message"
                                 name="message"
                                 rows="6"
                                 placeholder="Tell me about your project or opportunity..."
-                                required></textarea>
+                                required>
+                            </textarea>
 
                         </div>
 
@@ -1382,7 +1895,9 @@
 
                             Send Message
 
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i
+                                class="fa-solid fa-paper-plane">
+                            </i>
 
                         </button>
 
@@ -1408,19 +1923,29 @@
 
             <div class="footer-brand">
 
-                <a href="#home" class="logo">
+                <a
+                    href="#home"
+                    class="logo">
+
                     Sarah<span>.</span>
+
                 </a>
 
+
                 <p>
+
                     Front-End Developer ·
                     Software Engineering Student
+
                 </p>
 
             </div>
 
 
+            <!-- FOOTER SOCIAL -->
+
             <div class="footer-social">
+
 
                 <a
                     href="https://github.com/khansarah246"
@@ -1429,7 +1954,9 @@
                     aria-label="GitHub"
                     class="magnetic">
 
-                    <i class="fab fa-github"></i>
+                    <i
+                        class="fab fa-github">
+                    </i>
 
                 </a>
 
@@ -1441,7 +1968,9 @@
                     aria-label="LinkedIn"
                     class="magnetic">
 
-                    <i class="fab fa-linkedin-in"></i>
+                    <i
+                        class="fab fa-linkedin-in">
+                    </i>
 
                 </a>
 
@@ -1451,7 +1980,9 @@
                     aria-label="Email"
                     class="magnetic">
 
-                    <i class="fa-solid fa-envelope"></i>
+                    <i
+                        class="fa-solid fa-envelope">
+                    </i>
 
                 </a>
 
@@ -1459,7 +1990,10 @@
 
 
             <p class="copyright">
-                © 2026 Sarah Khan. All Rights Reserved.
+
+                © 2026 Sarah Khan.
+                All Rights Reserved.
+
             </p>
 
         </div>
@@ -1476,7 +2010,9 @@
         type="button"
         aria-label="Back to top">
 
-        <i class="fa-solid fa-arrow-up"></i>
+        <i
+            class="fa-solid fa-arrow-up">
+        </i>
 
     </button>
 
