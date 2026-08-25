@@ -2999,3 +2999,21 @@ body.light-mode
             .01ms !important;
     }
 }
+/* =====================================================
+   CONTENT VISIBILITY SAFETY FIX
+===================================================== */
+
+main,
+.hero,
+.about,
+.skills,
+.projects,
+.contact,
+.footer {
+    visibility: visible;
+}
+
+.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
