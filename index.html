@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +9,6 @@
         content="Sarah Khan — Front-End Developer & Software Engineering Student">
 
     <meta name="author" content="Sarah Khan">
-
     <meta name="theme-color" content="#0b0b0b">
 
     <title>Sarah Khan — Front-End Developer</title>
@@ -36,7 +34,6 @@
     ====================================================== -->
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 
@@ -48,8 +45,6 @@
 
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
-
-    <!-- Actual cursor drawing trail -->
     <canvas id="cursor-trail"></canvas>
 
 
@@ -58,9 +53,7 @@
     ====================================================== -->
 
     <div class="background-glow"></div>
-
     <div class="floating-particles"></div>
-
     <div class="noise"></div>
 
 
@@ -77,28 +70,27 @@
             </a>
 
 
+            <!-- DESKTOP NAVIGATION -->
+
             <nav class="desktop-nav">
 
                 <a href="#home">Home</a>
-
                 <a href="#about">About</a>
-
                 <a href="#skills">Skills</a>
-
                 <a href="#projects">Projects</a>
-
                 <a href="#contact">Contact</a>
 
             </nav>
 
 
-            <div class="nav-actions">
+            <!-- NAV ACTIONS -->
 
-                <!-- THEME -->
+            <div class="nav-actions">
 
                 <button
                     id="theme-toggle"
                     class="theme-toggle magnetic"
+                    type="button"
                     aria-label="Toggle light and dark theme">
 
                     <i class="fa-solid fa-moon"></i>
@@ -106,11 +98,11 @@
                 </button>
 
 
-                <!-- MOBILE MENU -->
-
                 <button
                     class="menu-btn magnetic"
-                    aria-label="Open navigation">
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
 
                     <i class="fa-solid fa-bars"></i>
 
@@ -121,24 +113,19 @@
         </div>
 
 
-        <!-- MOBILE NAV -->
+        <!-- MOBILE NAVIGATION -->
 
-        <div class="mobile-nav">
+        <nav class="mobile-nav">
 
             <a href="#home">Home</a>
-
             <a href="#about">About</a>
-
             <a href="#skills">Skills</a>
-
             <a href="#projects">Projects</a>
-
             <a href="#contact">Contact</a>
 
-        </div>
+        </nav>
 
     </header>
-
 
 
     <!-- =====================================================
@@ -157,7 +144,7 @@
             <div class="container hero-container">
 
 
-                <!-- HERO TEXT -->
+                <!-- HERO CONTENT -->
 
                 <div class="hero-content reveal">
 
@@ -176,9 +163,7 @@
 
 
                     <h1 class="hero-title">
-
                         Sarah<span>.</span>
-
                     </h1>
 
 
@@ -188,7 +173,9 @@
 
                         <br>
 
-                        <span>& Software Engineering Student</span>
+                        <span>
+                            &amp; Software Engineering Student
+                        </span>
 
                     </h2>
 
@@ -202,7 +189,7 @@
                     </p>
 
 
-                    <!-- BUTTONS -->
+                    <!-- HERO BUTTONS -->
 
                     <div class="hero-actions">
 
@@ -230,7 +217,7 @@
                     </div>
 
 
-                    <!-- SOCIAL -->
+                    <!-- SOCIAL LINKS -->
 
                     <div class="social-icons">
 
@@ -272,7 +259,6 @@
                 </div>
 
 
-
                 <!-- HERO VISUAL -->
 
                 <div class="hero-visual reveal">
@@ -283,11 +269,10 @@
                         <!-- ROTATING ORBITS -->
 
                         <div class="orbit orbit-1"></div>
-
                         <div class="orbit orbit-2"></div>
 
 
-                        <!-- IMAGE -->
+                        <!-- PROFILE IMAGE -->
 
                         <div class="hero-image">
 
@@ -298,19 +283,15 @@
                         </div>
 
 
-                        <!-- FLOATING CODE ELEMENT -->
+                        <!-- FLOATING ELEMENTS -->
 
                         <div class="floating-card floating-card-one">
-
                             <span>&lt;/&gt;</span>
-
                         </div>
 
 
                         <div class="floating-card floating-card-two">
-
                             <span>{ }</span>
-
                         </div>
 
 
@@ -331,11 +312,15 @@
             </div>
 
 
-            <!-- SCROLL -->
+            <!-- SCROLL INDICATOR -->
 
-            <a href="#about" class="scroll-indicator">
+            <a
+                href="#about"
+                class="scroll-indicator">
 
-                <span>Scroll to explore</span>
+                <span>
+                    Scroll to explore
+                </span>
 
                 <i class="fa-solid fa-arrow-down"></i>
 
@@ -344,56 +329,45 @@
         </section>
 
 
-
         <!-- =================================================
              MARQUEE
         ================================================== -->
 
-        <section class="marquee">
+        <section class="marquee" aria-label="Skills and specialties">
 
             <div class="marquee-track">
 
                 <span>FRONT-END DEVELOPMENT</span>
-
                 <b>✦</b>
 
                 <span>SOFTWARE ENGINEERING</span>
-
                 <b>✦</b>
 
                 <span>CREATIVE DEVELOPMENT</span>
-
                 <b>✦</b>
 
                 <span>RESPONSIVE DESIGN</span>
-
                 <b>✦</b>
 
                 <span>PROBLEM SOLVING</span>
-
                 <b>✦</b>
 
 
-                <!-- DUPLICATE -->
+                <!-- DUPLICATE FOR SEAMLESS LOOP -->
 
                 <span>FRONT-END DEVELOPMENT</span>
-
                 <b>✦</b>
 
                 <span>SOFTWARE ENGINEERING</span>
-
                 <b>✦</b>
 
                 <span>CREATIVE DEVELOPMENT</span>
-
                 <b>✦</b>
 
                 <span>RESPONSIVE DESIGN</span>
-
                 <b>✦</b>
 
                 <span>PROBLEM SOLVING</span>
-
                 <b>✦</b>
 
             </div>
@@ -401,15 +375,18 @@
         </section>
 
 
-
         <!-- =================================================
              ABOUT
         ================================================== -->
 
-        <section class="section about" id="about">
+        <section
+            class="section about"
+            id="about">
 
             <div class="container">
 
+
+                <!-- SECTION HEADER -->
 
                 <div class="section-header reveal">
 
@@ -437,10 +414,12 @@
                 </div>
 
 
+                <!-- ABOUT CONTENT -->
+
                 <div class="about-grid">
 
 
-                    <!-- TEXT -->
+                    <!-- ABOUT TEXT -->
 
                     <div class="about-copy reveal">
 
@@ -452,7 +431,7 @@
                         <h3>
 
                             Building digital experiences
-                            with code & creativity.
+                            with code &amp; creativity.
 
                         </h3>
 
@@ -498,8 +477,7 @@
                     </div>
 
 
-
-                    <!-- STATS -->
+                    <!-- ABOUT STATS -->
 
                     <div class="about-stats reveal">
 
@@ -572,15 +550,18 @@
         </section>
 
 
-
         <!-- =================================================
              SKILLS
         ================================================== -->
 
-        <section class="section skills" id="skills">
+        <section
+            class="section skills"
+            id="skills">
 
             <div class="container">
 
+
+                <!-- SECTION HEADER -->
 
                 <div class="section-header reveal">
 
@@ -607,6 +588,8 @@
 
                 </div>
 
+
+                <!-- SKILLS LIST -->
 
                 <div class="skills-list">
 
@@ -767,15 +750,18 @@
         </section>
 
 
-
         <!-- =================================================
              PROJECTS
         ================================================== -->
 
-        <section class="section projects" id="projects">
+        <section
+            class="section projects"
+            id="projects">
 
             <div class="container">
 
+
+                <!-- SECTION HEADER -->
 
                 <div class="section-header reveal">
 
@@ -803,13 +789,16 @@
                 </div>
 
 
+                <!-- PROJECTS -->
+
                 <div class="projects-list">
 
 
-                    <!-- PROJECT 01 -->
+                    <!-- =================================================
+                         PROJECT 01 — FILMYFY
+                    ================================================== -->
 
                     <article class="project-card reveal">
-
 
                         <div class="project-number">
                             01
@@ -849,11 +838,8 @@
                             <div class="project-tech">
 
                                 <span>HTML5</span>
-
                                 <span>CSS3</span>
-
                                 <span>Bootstrap</span>
-
                                 <span>JavaScript</span>
 
                             </div>
@@ -876,11 +862,11 @@
                     </article>
 
 
-
-                    <!-- PROJECT 02 -->
+                    <!-- =================================================
+                         PROJECT 02 — SPELLTRIXX
+                    ================================================== -->
 
                     <article class="project-card reveal">
-
 
                         <div class="project-number">
                             02
@@ -920,7 +906,6 @@
                             <div class="project-tech">
 
                                 <span>Python</span>
-
                                 <span>Jupyter Notebook</span>
 
                             </div>
@@ -943,11 +928,11 @@
                     </article>
 
 
-
-                    <!-- PROJECT 03 -->
+                    <!-- =================================================
+                         PROJECT 03 — SKYCAST
+                    ================================================== -->
 
                     <article class="project-card reveal">
-
 
                         <div class="project-number">
                             03
@@ -988,11 +973,8 @@
                             <div class="project-tech">
 
                                 <span>HTML5</span>
-
                                 <span>CSS3</span>
-
                                 <span>JavaScript</span>
-
                                 <span>OpenWeather API</span>
 
                             </div>
@@ -1032,11 +1014,11 @@
                     </article>
 
 
-
-                    <!-- PROJECT 04 -->
+                    <!-- =================================================
+                         PROJECT 04 — CODE MASTER
+                    ================================================== -->
 
                     <article class="project-card reveal">
-
 
                         <div class="project-number">
                             04
@@ -1076,11 +1058,8 @@
                             <div class="project-tech">
 
                                 <span>HTML5</span>
-
                                 <span>CSS3</span>
-
                                 <span>Bootstrap</span>
-
                                 <span>JavaScript</span>
 
                             </div>
@@ -1103,11 +1082,11 @@
                     </article>
 
 
-
-                    <!-- PROJECT 05 -->
+                    <!-- =================================================
+                         PROJECT 05 — BUILDMART
+                    ================================================== -->
 
                     <article class="project-card reveal">
-
 
                         <div class="project-number">
                             05
@@ -1149,13 +1128,9 @@
                             <div class="project-tech">
 
                                 <span>HTML5</span>
-
                                 <span>CSS3</span>
-
                                 <span>JavaScript</span>
-
                                 <span>PHP</span>
-
                                 <span>MySQL</span>
 
                             </div>
@@ -1184,15 +1159,18 @@
         </section>
 
 
-
         <!-- =================================================
              CONTACT
         ================================================== -->
 
-        <section class="section contact" id="contact">
+        <section
+            class="section contact"
+            id="contact">
 
             <div class="container">
 
+
+                <!-- SECTION HEADER -->
 
                 <div class="section-header reveal">
 
@@ -1220,13 +1198,14 @@
                 </div>
 
 
+                <!-- CONTACT GRID -->
+
                 <div class="contact-grid">
 
 
-                    <!-- CONTACT INFO -->
+                    <!-- CONTACT INFORMATION -->
 
                     <div class="contact-info reveal">
-
 
                         <span class="eyebrow">
                             GET IN TOUCH
@@ -1253,6 +1232,8 @@
                         <div class="contact-details">
 
 
+                            <!-- EMAIL -->
+
                             <a
                                 href="mailto:khansarahhh123@gmail.com"
                                 class="contact-item magnetic">
@@ -1271,6 +1252,8 @@
 
                             </a>
 
+
+                            <!-- GITHUB -->
 
                             <a
                                 href="https://github.com/khansarah246"
@@ -1292,6 +1275,8 @@
 
                             </a>
 
+
+                            <!-- LINKEDIN -->
 
                             <a
                                 href="https://www.linkedin.com/in/sarah-khan-2169473a1/"
@@ -1318,8 +1303,7 @@
                     </div>
 
 
-
-                    <!-- FORM -->
+                    <!-- CONTACT FORM -->
 
                     <form
                         id="contact-form"
@@ -1413,7 +1397,6 @@
     </main>
 
 
-
     <!-- =====================================================
          FOOTER
     ====================================================== -->
@@ -1476,16 +1459,12 @@
 
 
             <p class="copyright">
-
-                © 2026 Sarah Khan.
-                All Rights Reserved.
-
+                © 2026 Sarah Khan. All Rights Reserved.
             </p>
 
         </div>
 
     </footer>
-
 
 
     <!-- =====================================================
@@ -1494,12 +1473,12 @@
 
     <button
         class="back-to-top magnetic"
+        type="button"
         aria-label="Back to top">
 
         <i class="fa-solid fa-arrow-up"></i>
 
     </button>
-
 
 
     <!-- =====================================================
