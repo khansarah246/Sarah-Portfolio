@@ -5,55 +5,58 @@
 
     <meta charset="UTF-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
         content="Sarah Khan - Front-End Developer & Software Engineering Student">
 
-    <meta name="keywords"
-        content="Sarah Khan, Front-End Developer, Software Engineering, HTML, CSS, JavaScript, Bootstrap, PHP, MySQL">
-
     <meta name="author"
         content="Sarah Khan">
 
-    <title>Sarah Khan — Front-End Developer</title>
+    <title>Sarah Khan | Front-End Developer</title>
 
+    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-    <!-- CURSOR -->
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
 
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background -->
+    <div class="background-glow"></div>
+    <div class="noise"></div>
 
 
-    <!-- TOP PROGRESS -->
-
-    <div class="scroll-progress"></div>
-
-
-    <!-- NAVIGATION -->
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
     <header class="header">
 
         <div class="container navbar">
 
-            <a href="#home" class="logo magnetic">
+            <a href="#home" class="logo">
                 Sarah<span>.</span>
             </a>
+
 
             <nav>
 
@@ -64,15 +67,15 @@
                     </li>
 
                     <li>
-                        <a href="#projects">Work</a>
-                    </li>
-
-                    <li>
-                        <a href="#experience">Experience</a>
+                        <a href="#about">About</a>
                     </li>
 
                     <li>
                         <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
                     </li>
 
                     <li>
@@ -83,29 +86,22 @@
 
             </nav>
 
-            <div class="nav-right">
 
-                <span class="availability">
-                    <span class="availability-dot"></span>
-                    Available for opportunities
-                </span>
+            <div class="nav-actions">
 
                 <button
                     id="theme-toggle"
-                    class="theme-toggle magnetic"
                     aria-label="Toggle theme">
 
                     <i class="fa-solid fa-moon"></i>
 
                 </button>
 
-                <button
-                    class="menu-btn"
-                    aria-label="Open menu">
+                <div class="menu-btn">
 
                     <i class="fa-solid fa-bars"></i>
 
-                </button>
+                </div>
 
             </div>
 
@@ -114,24 +110,10 @@
     </header>
 
 
-    <!-- MOBILE MENU -->
 
-    <div class="mobile-menu">
-
-        <button class="mobile-close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-        <a href="#home">Home</a>
-        <a href="#projects">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-
-    </div>
-
-
-    <!-- HERO -->
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <main>
 
@@ -139,69 +121,90 @@
 
             <div class="container hero-container">
 
-                <div class="hero-top">
 
-                    <span class="eyebrow reveal">
-                        FRONT-END DEVELOPER
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content reveal">
+
+                    <span class="hero-tag">
+                        Available for opportunities
                     </span>
 
-                    <span class="hero-location reveal">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Karachi, Pakistan
-                    </span>
 
-                </div>
-
-
-                <div class="hero-title-wrap">
-
-                    <h1 class="hero-title reveal">
-
-                        Hi, I'm
-                        <span class="hero-name">Sarah Khan.</span>
-
+                    <h1>
+                        Sarah<span>.</span>
                     </h1>
 
-                    <h2 class="hero-subtitle reveal">
 
-                        Software Engineering Student
-                        <span class="outline-text">&amp; Web Developer</span>
-
+                    <h2>
+                        Front-End Developer
+                        <br>
+                        & Software Engineering Student
                     </h2>
 
-                </div>
+
+                    <p>
+                        I build modern, responsive and interactive
+                        web experiences with a focus on clean UI,
+                        usability and performance.
+                    </p>
 
 
-                <div class="hero-bottom">
+                    <div class="hero-buttons">
 
-                    <div class="hero-description reveal">
+                        <a
+                            href="#projects"
+                            class="btn primary-btn">
 
-                        <p>
-                            I build clean, responsive and interactive web
-                            experiences using modern front-end technologies.
-                            Currently pursuing my BS Software Engineering
-                            degree and turning ideas into practical projects.
-                        </p>
-
-                    </div>
-
-
-                    <div class="hero-actions reveal">
-
-                        <a href="#projects"
-                            class="circle-link magnetic">
-
-                            <span>View<br>my work</span>
+                            View My Work
 
                             <i class="fa-solid fa-arrow-down"></i>
 
                         </a>
 
-                        <a href="#contact"
-                            class="text-link magnetic">
 
-                            Let's work together
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a
+                            href="#contact"
+                            class="btn secondary-btn">
+
+                            Let's Connect
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-icons">
+
+                        <a
+                            href="https://github.com/khansarah246"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/sarah-khan-2169473a1/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a
+                            href="mailto:khansarahhh123@gmail.com"
+                            aria-label="Email">
+
+                            <i class="fa-solid fa-envelope"></i>
 
                         </a>
 
@@ -210,16 +213,25 @@
                 </div>
 
 
-                <div class="hero-stack reveal">
 
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>Bootstrap</span>
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
+                <!-- HERO IMAGE -->
+
+                <div class="hero-image reveal">
+
+                    <div class="image-wrapper">
+
+                        <img
+                            src="Profile.jfif"
+                            alt="Sarah Khan - Front-End Developer">
+
+                        <div class="image-label">
+                            Software Engineering
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-element"></div>
 
                 </div>
 
@@ -228,90 +240,421 @@
         </section>
 
 
-        <!-- FEATURED PROJECTS -->
 
-        <section class="projects section" id="projects">
+        <!-- =====================================================
+             MARQUEE
+        ====================================================== -->
+
+        <div class="marquee">
+
+            <div class="marquee-track">
+
+                <span>Front-End Development</span>
+
+                <span>Software Engineering</span>
+
+                <span>Creative Development</span>
+
+                <span>Responsive Design</span>
+
+                <span>Problem Solving</span>
+
+
+                <!-- duplicate for seamless loop -->
+
+                <span>Front-End Development</span>
+
+                <span>Software Engineering</span>
+
+                <span>Creative Development</span>
+
+                <span>Responsive Design</span>
+
+                <span>Problem Solving</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section
+            class="about section"
+            id="about">
 
             <div class="container">
-
-                <div class="section-top reveal">
-
-                    <div>
-
-                        <span class="section-number">01</span>
-
-                        <span class="eyebrow">
-                            SELECTED WORK
-                        </span>
-
-                    </div>
-
-                    <span class="section-count">
-                        05 PROJECTS
-                    </span>
-
-                </div>
 
 
                 <div class="section-heading reveal">
 
-                    <h2>
-                        Featured
-                        <span>projects.</span>
-                    </h2>
+                    <div>
+
+                        <span class="section-number">
+                            01 / ABOUT
+                        </span>
+
+                        <h2>
+                            Who I Am
+                        </h2>
+
+                    </div>
+
 
                     <p>
-                        A selection of academic and personal projects
-                        demonstrating my development, UI and problem-solving
-                        skills.
+                        A Software Engineering student who enjoys
+                        combining technology, design and problem
+                        solving to create useful digital experiences.
                     </p>
 
                 </div>
 
 
-                <div class="projects-list">
+
+                <div class="about-container">
+
+
+                    <div class="about-text reveal">
+
+                        <h3>
+                            Building digital experiences
+                            with code & creativity.
+                        </h3>
+
+
+                        <p>
+                            I'm Sarah Khan, a BS Software Engineering
+                            student with a strong interest in
+                            Front-End Development.
+                        </p>
+
+
+                        <p>
+                            I enjoy transforming ideas into clean,
+                            responsive and interactive websites using
+                            modern web technologies.
+                        </p>
+
+
+                        <p>
+                            Alongside my university studies, I work
+                            on personal and academic projects to
+                            improve my programming, UI development,
+                            database and problem-solving skills.
+                        </p>
+
+
+                        <a
+                            href="#projects"
+                            class="btn primary-btn">
+
+                            Explore My Projects
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="about-cards reveal">
+
+
+                        <div class="about-card">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            <h3>
+                                5+
+                            </h3>
+
+                            <p>
+                                Projects Built
+                            </p>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                            <h3>
+                                Web
+                            </h3>
+
+                            <p>
+                                Development
+                            </p>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                            <h3>
+                                BSSE
+                            </h3>
+
+                            <p>
+                                Student
+                            </p>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                            <h3>
+                                Creative
+                            </h3>
+
+                            <p>
+                                Problem Solver
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SKILLS
+        ====================================================== -->
+
+        <section
+            class="skills section"
+            id="skills">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <div>
+
+                        <span class="section-number">
+                            02 / SKILLS
+                        </span>
+
+                        <h2>
+                            My Toolkit
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Technologies and tools I use across
+                        academic, personal and web development
+                        projects.
+                    </p>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-html5"></i>
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-js"></i>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-bootstrap"></i>
+
+                        <h3>
+                            Bootstrap
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-python"></i>
+
+                        <h3>
+                            Python
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-java"></i>
+
+                        <h3>
+                            Java
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <h3>
+                            MySQL
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-git-alt"></i>
+
+                        <h3>
+                            Git
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <h3>
+                            GitHub
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <i class="fa-brands fa-react"></i>
+
+                        <h3>
+                            React
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section
+            class="projects section"
+            id="projects">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <div>
+
+                        <span class="section-number">
+                            03 / PROJECTS
+                        </span>
+
+                        <h2>
+                            Selected Work
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        A selection of academic and personal
+                        projects demonstrating my development
+                        and problem-solving skills.
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects-grid">
 
 
                     <!-- PROJECT 1 -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            01
-                        </div>
-
                         <div class="project-image">
 
-                            <img src="Filmyfy.PNG"
-                                alt="Filmyfy">
-
-                            <div class="image-overlay">
-
-                                <span>
-                                    Web Development
-                                </span>
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </div>
+                            <img
+                                src="Filmyfy.PNG"
+                                alt="Filmyfy movie website">
 
                         </div>
 
-                        <div class="project-info">
 
-                            <div class="project-meta">
-                                PERSONAL PROJECT
-                            </div>
+                        <div class="project-content">
 
-                            <h3>Filmyfy</h3>
+                            <h3>
+                                Filmyfy
+                            </h3>
 
                             <p>
-                                A responsive movie website with categorized
-                                content, clean navigation and a modern
-                                interface designed for different screen sizes.
+                                A responsive movie website with
+                                categorized movie sections and
+                                a clean, user-friendly interface.
                             </p>
 
-                            <div class="project-tags">
+
+                            <div class="project-tech">
 
                                 <span>HTML5</span>
                                 <span>CSS3</span>
@@ -320,123 +663,113 @@
 
                             </div>
 
-                            <a href="https://github.com/khansarah246/Filmyfy"
-                                target="_blank"
-                                class="project-link magnetic">
 
-                                View on GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <div class="project-buttons">
 
-                            </a>
+                                <a
+                                    href="https://github.com/khansarah246/Filmyfy"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn primary-btn">
+
+                                    <i class="fab fa-github"></i>
+
+                                    GitHub
+
+                                </a>
+
+                            </div>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 2 -->
 
-                    <article class="project-card reverse reveal">
-
-                        <div class="project-number">
-                            02
-                        </div>
+                    <article class="project-card reveal">
 
                         <div class="project-image">
 
-                            <img src="SpellTrixx.PNG"
-                                alt="Spelltrixx">
-
-                            <div class="image-overlay">
-
-                                <span>
-                                    Python Project
-                                </span>
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </div>
+                            <img
+                                src="SpellTrixx.PNG"
+                                alt="Spelltrixx Python game">
 
                         </div>
 
-                        <div class="project-info">
 
-                            <div class="project-meta">
-                                ACADEMIC PROJECT
-                            </div>
+                        <div class="project-content">
 
-                            <h3>Spelltrixx</h3>
+                            <h3>
+                                Spelltrixx
+                            </h3>
 
                             <p>
-                                An interactive Python spelling game created
-                                in Jupyter Notebook. It uses quizzes and
-                                game-based interaction to improve spelling
-                                and vocabulary.
+                                An interactive Python spelling game
+                                designed to improve vocabulary,
+                                spelling and logical thinking.
                             </p>
 
-                            <div class="project-tags">
+
+                            <div class="project-tech">
 
                                 <span>Python</span>
-                                <span>Jupyter</span>
-                                <span>Game Logic</span>
+                                <span>Jupyter Notebook</span>
 
                             </div>
 
-                            <a href="https://github.com/khansarah246/SpellTrixx"
-                                target="_blank"
-                                class="project-link magnetic">
 
-                                View on GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <div class="project-buttons">
 
-                            </a>
+                                <a
+                                    href="https://github.com/khansarah246/SpellTrixx"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn primary-btn">
+
+                                    <i class="fab fa-github"></i>
+
+                                    GitHub
+
+                                </a>
+
+                            </div>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 3 -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            03
-                        </div>
-
                         <div class="project-image">
 
-                            <img src="skycast1.PNG"
-                                alt="SkyCast Weather Dashboard">
-
-                            <div class="image-overlay">
-
-                                <span>
-                                    API Integration
-                                </span>
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </div>
+                            <img
+                                src="skycast1.PNG"
+                                alt="SkyCast weather dashboard">
 
                         </div>
 
-                        <div class="project-info">
 
-                            <div class="project-meta">
-                                WEB APPLICATION
-                            </div>
+                        <div class="project-content">
 
-                            <h3>SkyCast Weather Dashboard</h3>
+                            <h3>
+                                SkyCast
+                            </h3>
 
                             <p>
-                                A real-time weather dashboard using the
-                                OpenWeather API to display temperature,
-                                humidity, wind speed, visibility, sunrise
-                                and sunset information.
+                                A real-time weather dashboard using
+                                the OpenWeather API to display
+                                temperature, humidity, wind,
+                                visibility and other weather data.
                             </p>
 
-                            <div class="project-tags">
+
+                            <div class="project-tech">
 
                                 <span>HTML5</span>
                                 <span>CSS3</span>
@@ -445,23 +778,31 @@
 
                             </div>
 
-                            <div class="project-links">
 
-                                <a href="https://khansarah246.github.io/SkyCast/"
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://khansarah246.github.io/SkyCast/"
                                     target="_blank"
-                                    class="project-link magnetic">
+                                    rel="noopener noreferrer"
+                                    class="btn primary-btn">
+
+                                    <i class="fa-solid fa-globe"></i>
 
                                     Live Demo
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                                 </a>
 
-                                <a href="https://github.com/khansarah246/SkyCast"
+
+                                <a
+                                    href="https://github.com/khansarah246/SkyCast"
                                     target="_blank"
-                                    class="project-link secondary-link magnetic">
+                                    rel="noopener noreferrer"
+                                    class="btn secondary-btn">
+
+                                    <i class="fab fa-github"></i>
 
                                     GitHub
-                                    <i class="fa-brands fa-github"></i>
 
                                 </a>
 
@@ -470,49 +811,36 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 4 -->
 
-                    <article class="project-card reverse reveal">
-
-                        <div class="project-number">
-                            04
-                        </div>
+                    <article class="project-card reveal">
 
                         <div class="project-image">
 
-                            <img src="CodeMaster.PNG"
-                                alt="Code Master">
-
-                            <div class="image-overlay">
-
-                                <span>
-                                    Front-End
-                                </span>
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </div>
+                            <img
+                                src="CodeMaster.PNG"
+                                alt="Code Master website">
 
                         </div>
 
-                        <div class="project-info">
 
-                            <div class="project-meta">
-                                LEARNING PLATFORM
-                            </div>
+                        <div class="project-content">
 
-                            <h3>Code Master</h3>
+                            <h3>
+                                Code Master
+                            </h3>
 
                             <p>
-                                A beginner-friendly programming learning
-                                website designed with a responsive interface,
-                                structured content and interactive front-end
-                                elements.
+                                A beginner-friendly programming
+                                learning website with a responsive
+                                layout and clean navigation.
                             </p>
 
-                            <div class="project-tags">
+
+                            <div class="project-tech">
 
                                 <span>HTML5</span>
                                 <span>CSS3</span>
@@ -521,61 +849,58 @@
 
                             </div>
 
-                            <a href="https://github.com/khansarah246/Portfolio"
-                                target="_blank"
-                                class="project-link magnetic">
 
-                                View on GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <div class="project-buttons">
 
-                            </a>
+                                <a
+                                    href="https://github.com/khansarah246/Portfolio"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn primary-btn">
+
+                                    <i class="fab fa-github"></i>
+
+                                    GitHub
+
+                                </a>
+
+                            </div>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 5 -->
 
-                    <article class="project-card featured-project reveal">
-
-                        <div class="project-number">
-                            05
-                        </div>
+                    <article class="project-card reveal">
 
                         <div class="project-image">
 
-                            <img src="buildmart.PNG"
-                                alt="BuildMart Smart Building Material Marketplace">
-
-                            <div class="image-overlay">
-
-                                <span>
-                                    Full-Stack Project
-                                </span>
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </div>
+                            <img
+                                src="buildmart.PNG"
+                                alt="BuildMart marketplace">
 
                         </div>
 
-                        <div class="project-info">
 
-                            <div class="project-meta">
-                                FEATURED PROJECT
-                            </div>
+                        <div class="project-content">
 
-                            <h3>BuildMart</h3>
+                            <h3>
+                                BuildMart
+                            </h3>
 
                             <p>
-                                A smart building material marketplace that
-                                connects customers with suppliers across
-                                Pakistan. Users can explore materials,
-                                compare suppliers and request quotations.
+                                A smart building material marketplace
+                                connecting customers with suppliers
+                                across Pakistan. Users can explore
+                                materials, compare suppliers and
+                                request quotations.
                             </p>
 
-                            <div class="project-tags">
+
+                            <div class="project-tech">
 
                                 <span>HTML5</span>
                                 <span>CSS3</span>
@@ -585,15 +910,22 @@
 
                             </div>
 
-                            <a href="https://buildmart.infy.click/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link magnetic">
 
-                                Open Live Website
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="project-buttons">
 
-                            </a>
+                                <a
+                                    href="https://buildmart.infy.click/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn primary-btn">
+
+                                    <i class="fa-solid fa-globe"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                            </div>
 
                         </div>
 
@@ -606,296 +938,101 @@
         </section>
 
 
-        <!-- EXPERIENCE -->
 
-        <section class="experience section" id="experience">
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section
+            class="contact section"
+            id="contact">
 
             <div class="container">
-
-                <div class="section-top reveal">
-
-                    <div>
-
-                        <span class="section-number">02</span>
-
-                        <span class="eyebrow">
-                            MY JOURNEY
-                        </span>
-
-                    </div>
-
-                </div>
 
 
                 <div class="section-heading reveal">
 
-                    <h2>
-                        Learning &
-                        <span>experience.</span>
-                    </h2>
-
-                    <p>
-                        My development journey is built through academic
-                        learning, practical projects and continuous exploration
-                        of new technologies.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline">
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-date">
-                            CURRENT
-                        </div>
-
-                        <div class="timeline-marker"></div>
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-type">
-                                EDUCATION
-                            </span>
-
-                            <h3>
-                                BS Software Engineering
-                            </h3>
-
-                            <h4>
-                                Jinnah University for Women
-                            </h4>
-
-                            <p>
-                                Currently pursuing a Bachelor of Science in
-                                Software Engineering with practical coursework
-                                in programming, data structures, databases,
-                                software engineering and web development.
-                            </p>
-
-                            <div class="timeline-tags">
-
-                                <span>Software Engineering</span>
-                                <span>Web Development</span>
-                                <span>DBMS</span>
-                                <span>DSA</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-date">
-                            2025 — 2026
-                        </div>
-
-                        <div class="timeline-marker"></div>
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-type">
-                                PROJECT DEVELOPMENT
-                            </span>
-
-                            <h3>
-                                Academic & Personal Projects
-                            </h3>
-
-                            <h4>
-                                Web Development / Software Projects
-                            </h4>
-
-                            <p>
-                                Developed multiple projects to strengthen
-                                front-end development, programming,
-                                database management and problem-solving
-                                capabilities.
-                            </p>
-
-                            <div class="timeline-tags">
-
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Python</span>
-                                <span>Java</span>
-                                <span>PHP</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-date">
-                            2025
-                        </div>
-
-                        <div class="timeline-marker"></div>
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-type">
-                                CERTIFICATIONS
-                            </span>
-
-                            <h3>
-                                Google IT Automation with Python
-                            </h3>
-
-                            <h4>
-                                Coursera
-                            </h4>
-
-                            <p>
-                                Developed practical Python and automation
-                                knowledge while learning programming concepts,
-                                scripting and IT automation workflows.
-                            </p>
-
-                            <div class="timeline-tags">
-
-                                <span>Python</span>
-                                <span>Automation</span>
-                                <span>IT</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-
-        <section class="skills section" id="skills">
-
-            <div class="container">
-
-                <div class="section-top reveal">
-
                     <div>
 
-                        <span class="section-number">03</span>
-
-                        <span class="eyebrow">
-                            TOOLBOX
+                        <span class="section-number">
+                            04 / CONTACT
                         </span>
 
+                        <h2>
+                            Let's Connect
+                        </h2>
+
                     </div>
 
-                </div>
-
-
-                <div class="section-heading reveal">
-
-                    <h2>
-                        Technologies I
-                        <span>use.</span>
-                    </h2>
 
                     <p>
-                        Tools and technologies I have learned through
-                        coursework and hands-on projects.
+                        Open to internships, software engineering
+                        opportunities, collaborations and interesting
+                        development projects.
                     </p>
 
                 </div>
 
 
-                <div class="skills-layout">
+
+                <div class="contact-container">
 
 
-                    <div class="skill-category reveal">
+                    <div class="contact-info reveal">
 
-                        <div class="skill-category-title">
 
-                            <span>01</span>
+                        <div class="contact-box">
 
-                            <h3>
-                                Front-End
-                            </h3>
+                            <i class="fa-solid fa-envelope"></i>
 
-                        </div>
+                            <div>
 
-                        <div class="skill-list">
+                                <h3>
+                                    Email
+                                </h3>
 
-                            <div class="skill-item">
-                                <i class="fa-brands fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
+                                <p>
+                                    khansarahhh123@gmail.com
+                                </p>
 
-                            <div class="skill-item">
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-brands fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-brands fa-bootstrap"></i>
-                                <span>Bootstrap</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-brands fa-react"></i>
-                                <span>React</span>
                             </div>
 
                         </div>
 
-                    </div>
 
+                        <div class="contact-box">
 
-                    <div class="skill-category reveal">
+                            <i class="fab fa-github"></i>
 
-                        <div class="skill-category-title">
+                            <div>
 
-                            <span>02</span>
+                                <h3>
+                                    GitHub
+                                </h3>
 
-                            <h3>
-                                Programming
-                            </h3>
+                                <p>
+                                    github.com/khansarah246
+                                </p>
+
+                            </div>
 
                         </div>
 
-                        <div class="skill-list">
 
-                            <div class="skill-item">
-                                <i class="fa-brands fa-python"></i>
-                                <span>Python</span>
-                            </div>
+                        <div class="contact-box">
 
-                            <div class="skill-item">
-                                <i class="fa-brands fa-java"></i>
-                                <span>Java</span>
-                            </div>
+                            <i class="fab fa-linkedin-in"></i>
 
-                            <div class="skill-item">
-                                <i class="fa-brands fa-php"></i>
-                                <span>PHP</span>
-                            </div>
+                            <div>
 
-                            <div class="skill-item">
-                                <i class="fa-solid fa-code"></i>
-                                <span>OOP</span>
+                                <h3>
+                                    LinkedIn
+                                </h3>
+
+                                <p>
+                                    linkedin.com/in/sarah-khan-2169473a1
+                                </p>
+
                             </div>
 
                         </div>
@@ -903,291 +1040,49 @@
                     </div>
 
 
-                    <div class="skill-category reveal">
 
-                        <div class="skill-category-title">
-
-                            <span>03</span>
-
-                            <h3>
-                                Database & Tools
-                            </h3>
-
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-database"></i>
-                                <span>MySQL</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-database"></i>
-                                <span>SQL Server</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-brands fa-git-alt"></i>
-                                <span>Git</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-brands fa-github"></i>
-                                <span>GitHub</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <span>Power BI</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-category reveal">
-
-                        <div class="skill-category-title">
-
-                            <span>04</span>
-
-                            <h3>
-                                Concepts
-                            </h3>
-
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-diagram-project"></i>
-                                <span>Data Structures</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-object-group"></i>
-                                <span>OOP</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-server"></i>
-                                <span>DBMS</span>
-                            </div>
-
-                            <div class="skill-item">
-                                <i class="fa-solid fa-code-branch"></i>
-                                <span>Software Engineering</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-
-        <section class="contact section" id="contact">
-
-            <div class="container">
-
-                <div class="contact-intro reveal">
-
-                    <span class="section-number">
-                        04
-                    </span>
-
-                    <span class="eyebrow">
-                        CONTACT
-                    </span>
-
-                    <h2>
-                        Let's build
-                        <span>something.</span>
-                    </h2>
-
-                    <p>
-                        Have an internship opportunity, project idea or
-                        collaboration in mind? Send me a message.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-grid">
-
-
-                    <div class="contact-details reveal">
-
-                        <div class="contact-detail">
-
-                            <span class="detail-label">
-                                EMAIL
-                            </span>
-
-                            <a href="mailto:khansarahhh123@gmail.com"
-                                class="detail-value">
-
-                                khansarahhh123@gmail.com
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </a>
-
-                        </div>
-
-
-                        <div class="contact-detail">
-
-                            <span class="detail-label">
-                                GITHUB
-                            </span>
-
-                            <a href="https://github.com/khansarah246"
-                                target="_blank"
-                                class="detail-value">
-
-                                github.com/khansarah246
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </a>
-
-                        </div>
-
-
-                        <div class="contact-detail">
-
-                            <span class="detail-label">
-                                LINKEDIN
-                            </span>
-
-                            <a href="https://www.linkedin.com/in/sarah-khan-2169473a1"
-                                target="_blank"
-                                class="detail-value">
-
-                                linkedin.com/in/sarah-khan-2169473a1
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                            </a>
-
-                        </div>
-
-
-                        <div class="contact-socials">
-
-                            <a href="https://github.com/khansarah246"
-                                target="_blank"
-                                class="magnetic">
-
-                                <i class="fa-brands fa-github"></i>
-
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/sarah-khan-2169473a1"
-                                target="_blank"
-                                class="magnetic">
-
-                                <i class="fa-brands fa-linkedin-in"></i>
-
-                            </a>
-
-                            <a href="mailto:khansarahhh123@gmail.com"
-                                class="magnetic">
-
-                                <i class="fa-solid fa-envelope"></i>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <form id="contact-form"
+                    <form
+                        id="contact-form"
                         class="contact-form reveal">
 
-                        <div class="form-row">
 
-                            <div class="form-group">
-
-                                <label for="name">
-                                    Your Name
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="name"
-                                    placeholder="Sarah Khan"
-                                    required>
-
-                            </div>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your Name"
+                            autocomplete="name"
+                            required>
 
 
-                            <div class="form-group">
-
-                                <label for="email">
-                                    Your Email
-                                </label>
-
-                                <input
-                                    type="email"
-                                    id="email"
-                                    placeholder="you@example.com"
-                                    required>
-
-                            </div>
-
-                        </div>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email"
+                            autocomplete="email"
+                            required>
 
 
-                        <div class="form-group">
-
-                            <label for="subject">
-                                Subject
-                            </label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                placeholder="Internship / Project / Collaboration"
-                                required>
-
-                        </div>
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Subject"
+                            required>
 
 
-                        <div class="form-group">
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                rows="6"
-                                placeholder="Tell me about your opportunity..."
-                                required></textarea>
-
-                        </div>
+                        <textarea
+                            id="message"
+                            rows="7"
+                            placeholder="Tell me about your project or opportunity..."
+                            required></textarea>
 
 
                         <button
                             type="submit"
-                            class="submit-btn magnetic">
+                            class="btn primary-btn">
 
-                            <span>
-                                Send Message
-                            </span>
+                            Send Message
 
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
 
                         </button>
 
@@ -1202,65 +1097,70 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer class="footer">
 
         <div class="container">
 
-            <div class="footer-top">
+            <h3>
+                Sarah<span>.</span>
+            </h3>
 
-                <div>
-
-                    <a href="#home"
-                        class="footer-logo">
-
-                        Sarah<span>.</span>
-
-                    </a>
-
-                    <p>
-                        Front-End Developer & Software Engineering Student.
-                    </p>
-
-                </div>
+            <p>
+                Front-End Developer · Software Engineering Student
+            </p>
 
 
-                <a href="#home"
-                    class="back-top magnetic">
+            <div class="footer-social">
 
-                    Back to top
-                    <i class="fa-solid fa-arrow-up"></i>
+                <a
+                    href="https://github.com/khansarah246"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/sarah-khan-2169473a1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a
+                    href="mailto:khansarahhh123@gmail.com"
+                    aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
 
                 </a>
 
             </div>
 
 
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 Sarah Khan. All rights reserved.
-                </p>
-
-                <p>
-                    Designed & built with HTML, CSS & JavaScript.
-                </p>
-
-            </div>
+            <p class="copyright">
+                © 2026 Sarah Khan. All Rights Reserved.
+            </p>
 
         </div>
 
     </footer>
 
 
-    <!-- CUSTOM CURSOR LABEL -->
 
-    <div class="cursor-label">
-        VIEW
-    </div>
-
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
