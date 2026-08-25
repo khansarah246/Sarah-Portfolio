@@ -1079,3 +1079,191 @@ ul {
     }
 
 }
+/*==================================================
+CUSTOM CURSOR
+==================================================*/
+
+* {
+    cursor: none;
+}
+
+.cursor-dot {
+    position: fixed;
+    width: 7px;
+    height: 7px;
+    background: #38bdf8;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10001;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        0 0 10px #38bdf8,
+        0 0 25px rgba(56, 189, 248, 0.8);
+}
+
+.cursor-ring {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(56, 189, 248, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition:
+        width .25s ease,
+        height .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+/* Cursor when hovering links/buttons */
+
+.cursor-ring.hover {
+    width: 65px;
+    height: 65px;
+    border-color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
+}
+
+/*==================================================
+CURSOR TRAIL CANVAS
+==================================================*/
+
+#cursor-trail {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/*==================================================
+FLOATING PARTICLES
+==================================================*/
+
+.floating-particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #38bdf8;
+    opacity: .35;
+    animation: particleFloat linear infinite;
+}
+
+@keyframes particleFloat {
+
+    0% {
+        transform: translateY(110vh) translateX(0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .4;
+    }
+
+    85% {
+        opacity: .4;
+    }
+
+    100% {
+        transform: translateY(-10vh) translateX(80px);
+        opacity: 0;
+    }
+
+}
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.background-glow {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(56,189,248,.12),
+        transparent 70%
+    );
+    top: -150px;
+    right: -150px;
+    pointer-events: none;
+    z-index: -2;
+    animation: glowMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-150px, 120px);
+    }
+
+}
+
+/*==================================================
+NOISE
+==================================================*/
+
+.noise {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9997;
+    opacity: .025;
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+
+/*==================================================
+LIGHT MODE CURSOR
+==================================================*/
+
+body.light-mode .cursor-dot {
+    background: #7c3aed;
+    box-shadow:
+        0 0 10px #7c3aed,
+        0 0 25px rgba(124,58,237,.5);
+}
+
+body.light-mode .cursor-ring {
+    border-color: rgba(124,58,237,.65);
+}
+
+body.light-mode .cursor-ring.hover {
+    border-color: #38bdf8;
+    background: rgba(56,189,248,.08);
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width: 768px) {
+
+    * {
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-ring,
+    #cursor-trail {
+        display: none;
+    }
+
+}
